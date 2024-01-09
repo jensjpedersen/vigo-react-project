@@ -5,19 +5,21 @@ import {useEffect, useState} from "react";
 import styled from 'styled-components';
 
 
-const DEBUG_MODE_ON = true;
-
-if (!DEBUG_MODE_ON) {
-    console = console || {};
-    console.log = function(){};
-}
-
-
-
 
 const StyledWritersPage = styled.div`
+    
+    .writers-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 1000px;
+        justify-content: center;
+    }
 
+    img {
+        width: 200px;
 
+    }
 
 `
 
@@ -34,7 +36,6 @@ export default function WritersPage() {
             const url = "https://jsonplaceholder.typicode.com/users"
             const response = await fetch(url); 
             const data = await response.json();
-            console.log(data);
             setWritersData(data);
         }
 
@@ -51,13 +52,15 @@ export default function WritersPage() {
     return (
         <StyledWritersPage>
 
-            <h1>Writers data</h1>
+            <h1>Skribenter</h1>
 
-            <div className='writers'>
+            <h3>Les inlegg fra våres skribenter.</h3>
 
-                {writersData && writersData.map((writer, index) => {
+            <div className='writers-container'>
+
+                {writersData && writersData.map(writer => {
                     return ( 
-                        <div key={'writer' + writer.id}>
+                        <div key={'writer' + writer.id} className='writer' >
                             <h3> { writer.name }</h3>
                             <img src="../../public/blank-profile-picture-973460_960_720.png"/>
                             <p> {writer.email}</p>
@@ -65,8 +68,8 @@ export default function WritersPage() {
                     )
 
                 })}
-
             </div>
+
 
         </StyledWritersPage>
     )

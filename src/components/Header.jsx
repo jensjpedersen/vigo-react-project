@@ -24,8 +24,8 @@ export default function Header() {
             <nav>
                 <ul>
                     <li> <Link to="/">Home</Link> </li>
-                    <li> <Link to="/Users">Users</Link> </li>
-                    <li> <Link to="/Posts">Posts</Link> </li>
+                    <li> <Link to="/writers">Writers</Link> </li>
+                    <li> <Link to="/news">Nyheter</Link> </li>
                 </ul>
             </nav>
         </StyledHeader>

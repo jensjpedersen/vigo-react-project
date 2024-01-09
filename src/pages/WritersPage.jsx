@@ -54,7 +54,7 @@ export default function WritersPage() {
 
             <h1>Skribenter</h1>
 
-            <h3>Les inlegg fra våres skribenter.</h3>
+            <p>Les inlegg fra våre skribenter.</p>
 
             <div className='writers-container'>
 

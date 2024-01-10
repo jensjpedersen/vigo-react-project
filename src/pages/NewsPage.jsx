@@ -1,6 +1,8 @@
 
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
+import Posts from '../components/Posts.jsx'; 
+
 
 
 const StyledNewsPage = styled.div`
@@ -34,25 +36,7 @@ export default function NewsPage() {
         <StyledNewsPage>
             <h1>News page</h1>
             <p>Les sisten inlegg</p>
-
-            <div>
-                { postsData && postsData.map((post, index) => {
-                    console.log(post.title);
-                    return (
-                        <div>
-                            <h3> {post.title} </h3>
-                            <p> {post.body} </p>
-                        </div>
-                    )
-                })}
-               
-
-
-
-            </div>
-
-
-
+            postsData && <Posts posts={postsData}/>
         </StyledNewsPage>
     )
 

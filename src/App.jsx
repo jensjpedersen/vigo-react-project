@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+// import './App.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 
@@ -13,9 +13,9 @@ import MainPage from './pages/MainPage'
 
 function App() {
 
-  return (
-    <>
-        <BrowserRouter>
+    return (
+        <>
+            <BrowserRouter>
 
                 <Header />
 
@@ -27,9 +27,9 @@ function App() {
                     <Route path="*" element={<h1>Not Found</h1>} />
                 </Routes>
 
-        </BrowserRouter>
-    </>
-  )
+            </BrowserRouter>
+        </>
+    )
 }
 
 export default App

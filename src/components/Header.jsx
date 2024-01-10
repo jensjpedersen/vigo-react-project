@@ -2,6 +2,8 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import variables from '../globals/variables'
+import { variance } from 'd3';
+
 
 
 const StyledHeader = styled.header`
@@ -26,18 +28,22 @@ const StyledHeader = styled.header`
     }
 
     li {
-      list-style: none;
+        list-style: none;
     }
 
 
     a {
-      text-decoration: none;
-      color: ${variables.colors.light2}; 
-      font-size: 1.2rem;
-      font-weight: 600; 
+        text-decoration: none;
+        color: ${variables.colors.light2}; 
+        font-size: 1.1rem;
+        font-weight: 600; 
+        display: block; 
 
-      &:hover {
-        color: red; 
+
+        &:hover {
+            color: white; 
+            transform: scale(1.1);
+            cursor: pointer;
       }
     }
 

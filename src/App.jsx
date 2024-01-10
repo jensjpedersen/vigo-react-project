@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Header from './components/Header'
 import WritersPage from './pages/WritersPage'
 import NewsPage from './pages/NewsPage'
+import MainPage from './pages/MainPage'
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
                 <Header />
 
                 <Routes>
-                    <Route path="/" element={<h1>Home</h1>} />
+                    <Route path="/" element={<MainPage/>} />
                     <Route path="/writers" element={<WritersPage/>} />
                     <Route path="/news" element={<NewsPage/>} />
 

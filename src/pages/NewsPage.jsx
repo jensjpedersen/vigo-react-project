@@ -1,4 +1,3 @@
-
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 import Posts from '../components/Posts.jsx'; 
@@ -36,7 +35,7 @@ export default function NewsPage() {
         <StyledNewsPage>
             <h1>News page</h1>
             <p>Les sisten inlegg</p>
-            postsData && <Posts posts={postsData}/>
+            { postsData && <Posts posts={postsData}/> }
         </StyledNewsPage>
     )
 

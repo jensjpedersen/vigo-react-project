@@ -10,11 +10,12 @@ const StyledMainPage = styled.div`
 
 
 export default function MainPage() {
-  return (
-    <StyledMainPage>
-      <h1>main page</h1>
-      <h3>Velkommen</h3>
-      <p>På denne siden kan du lese nyhter fra våre skribenter.</p>
-    </StyledMainPage>
-  )
+    return (
+        <StyledMainPage>
+            <div className="text-container">
+                <h3>Velkommen</h3>
+                <p>På denne siden kan du lese nyhter fra våre skribenter.</p>
+            </div>
+        </StyledMainPage>
+    )
 }

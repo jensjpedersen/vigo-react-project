@@ -38,6 +38,8 @@ const StyledHeader = styled.header`
         font-size: 1.1rem;
         font-weight: 600; 
         display: block; 
+        // TODO: text shadow not working 
+
 
 
         &:hover {

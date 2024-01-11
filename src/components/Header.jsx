@@ -62,10 +62,9 @@ export default function Header() {
                 </Link> 
             </nav>
 
-
             <nav>
                 <ul>
-                    <li> <Link to="/writers">Writers</Link> </li>
+                    <li> <Link to="/writers">Skribenter</Link> </li>
                     <li> <Link to="/news">Nyheter</Link> </li>
                 </ul>
             </nav>

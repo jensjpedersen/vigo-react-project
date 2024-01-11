@@ -8,12 +8,24 @@ const StyledPosts = styled.div`
     flex-direction: column; 
     max-width: 1000px; 
     width: 1000px; 
+    gap: 10px;
 
     align-items: center; 
 
+    
+    h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        // margin: 5px 0; 
+
+
+    }
+
     div {
-        width: 500px; 
-        background-color: gray;  
+        width: 700px; 
+        border-top: 2px solid black;
+        // box-shadow: 5px 5px black;
+        padding: 25px;
     }
 
 

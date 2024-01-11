@@ -17,7 +17,7 @@ const StyledMainPage = styled.div`
 
 
     .text-container {
-        padding: 5px 15px;
+        padding: 20px 20px;
         box-shadow: 0 0 5px 2px black;
         background-color: ${variables.colors.accent1};
         opacity: 0.9;
@@ -29,7 +29,7 @@ const StyledMainPage = styled.div`
         left: 15%;
 
         h2 {
-            margin: 5px 0;
+            margin-bottom: 5px;
         }
     }
 `

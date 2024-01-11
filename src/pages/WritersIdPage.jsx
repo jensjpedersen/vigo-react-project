@@ -17,7 +17,7 @@ export default function WritersIdPage() {
 
     return (
         <StyledWritersIdPage>
-            <h1>Artikler fra {useLocation().state}</h1>
+            <h2>Artikler av {useLocation().state}</h2>
 
 
         </StyledWritersIdPage>

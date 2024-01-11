@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import variables from "../globals/variables";
 import SingleWriterPage from "./SingleWriterPage";
+import { fetchData } from "../utils/api";
 
 
 
@@ -89,17 +90,8 @@ export default function WritersPage() {
 
     useEffect(() => {
 
-        async function fetchWritersData() {
-            const url = "https://jsonplaceholder.typicode.com/users"
-            const response = await fetch(url); 
-            const data = await response.json();
-            setWritersData(data);
-        }
-
-        fetchWritersData()
-
-
-
+        const url = "https://jsonplaceholder.typicode.com/users"
+        fetchData(url).then(data => setWritersData(data))
 
     }, []) 
 

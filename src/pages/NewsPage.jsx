@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 import Posts from '../components/Posts.jsx'; 
 import variables from '../globals/variables.js';
-
+import { fetchData } from '../utils/api.js'; 
 
 
 const StyledNewsPage = styled.div`
@@ -35,14 +35,8 @@ export default function NewsPage() {
 
     useEffect(() => {
 
-        async function fetchPosts() {
-            const url = "https://jsonplaceholder.typicode.com/posts?_limit=10"; 
-            const res = await fetch (url); 
-            const data = await res.json(); 
-            setPostsData(data)
-        }
-
-        fetchPosts()
+        const url = "https://jsonplaceholder.typicode.com/posts?_limit=10"; 
+        fetchData(url).then(data => setPostsData(data));
 
     }, [])
 

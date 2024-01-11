@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 import styled from 'styled-components';
 import variables from "../globals/variables";
+import SingleWriterPage from "./SingleWriterPage";
 
 
 
@@ -40,6 +41,11 @@ const StyledWritersPage = styled.div`
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
+        p {
+            text-align: center;
+        } 
+
 
     }
 
@@ -114,7 +120,7 @@ export default function WritersPage() {
 
                 {writersData && writersData.map(writer => {
                     return ( 
-                        <Link to={`/writers/${writer.id}`} key={'writer' + writer.id} className='writer' >
+                        <Link to={`/writers/${writer.id}`} key={'writer' + writer.id} className='writer' state={writer.name}>
                                 <h3> { writer.name }</h3>
                                 <img src="../../public/blank-profile-picture-973460_960_720.png"/>
                                 <p> {writer.email}</p>

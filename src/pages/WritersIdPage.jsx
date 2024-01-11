@@ -2,7 +2,7 @@
 
 
 
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import styled from 'styled-components';
 
 
@@ -11,13 +11,15 @@ const StyledWritersIdPage = styled.div`
 `
 
 
-
-
 export default function WritersIdPage() {
+
+    console.log(useLocation().state);
+
     return (
         <StyledWritersIdPage>
-            <h1>Writer somthing</h1>
-            <p> { useParams().id } </p>
+            <h1>Artikler fra {useLocation().state}</h1>
+
+
         </StyledWritersIdPage>
     )
 }

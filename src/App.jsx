@@ -10,6 +10,10 @@ import WritersPage from './pages/WritersPage'
 import NewsPage from './pages/NewsPage'
 import MainPage from './pages/MainPage'
 import Footer from './components/Footer'
+import WritersIdPage from './pages/WritersIdPage'
+
+
+
 
 
 function App() {
@@ -24,7 +28,7 @@ function App() {
                     <Route path="/" element={<MainPage/>} />
                     <Route path="/writers" element={<WritersPage/>} />
                     <Route path="/news" element={<NewsPage/>} />
-
+                    <Route path="/writers/:id" element={<WritersIdPage/>} />
                     <Route path="*" element={<h1>Not Found</h1>} />
                 </Routes>
 

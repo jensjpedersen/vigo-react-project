@@ -12,6 +12,8 @@ export default {
     accent1: 'hsl(190, 67%, 12%)',
     accent2: 'hsl(190, 48%, 24%)',
     accent3: 'hsl(190, 32%, 93%)',
+
+    link: 'hsl(277, 47%, 68%)', 
   },
 
 

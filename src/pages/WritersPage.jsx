@@ -2,7 +2,6 @@
 import { json } from "d3";
 import {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
-
 import styled from 'styled-components';
 import variables from "../globals/variables";
 import SingleWriterPage from "./SingleWriterPage";
@@ -24,6 +23,11 @@ const StyledWritersPage = styled.div`
         flex-direction: column;
         align-items: center;
         margin: 50px 0;
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
     }
 
     .writers-container {
@@ -61,6 +65,11 @@ const StyledWritersPage = styled.div`
         transition: all 0.2s ease-in-out;
         text-decoration: none;
         color: white;
+
+        &:visited {
+            color: ${variables.colors.link}
+
+        }
 
         &:hover {
 
@@ -104,7 +113,7 @@ export default function WritersPage() {
 
             <div className="header-container">
                 <h1>Skribenter</h1>
-                <p>Les inlegg fra våre skribenter.</p>
+                <p>Klikk på en profil for å vise alle artikler av denne skribenten.</p>
             </div>
 
 

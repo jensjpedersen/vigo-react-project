@@ -69,7 +69,7 @@ export default function Header() {
         <StyledHeader>
             <nav>
                 <Link to="/">
-                    Home
+                    Hjem
                 </Link> 
             </nav>
 

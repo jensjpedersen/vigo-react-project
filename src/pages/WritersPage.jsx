@@ -7,13 +7,33 @@ import styled from 'styled-components';
 
 
 const StyledWritersPage = styled.div`
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+
     .writers-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 50px;
         max-width: 1000px;
         justify-content: center;
+
+
+        h3 {
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+
     }
 
     img {
@@ -52,9 +72,12 @@ export default function WritersPage() {
     return (
         <StyledWritersPage>
 
-            <h1>Skribenter</h1>
 
-            <p>Les inlegg fra våre skribenter.</p>
+            <div className="header-container">
+                <h1>Skribenter</h1>
+                <p>Les inlegg fra våre skribenter.</p>
+            </div>
+
 
             <div className='writers-container'>
 

@@ -16,7 +16,9 @@ export default {
 
 
   dimesions: {
-    headerHeight: '60px'
+    headerHeight: '60px',
+    footerHeight: '200px'
+
   }
 
 

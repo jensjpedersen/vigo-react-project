@@ -51,7 +51,7 @@ export default function NewsPage() {
             <div className="header">
 
                 <h1>Siste nyhter</h1>
-                <p>Lse siste saker fra våre skribenter</p>
+                <p>Les siste saker fra våre skribenter</p>
 
             </div>
             { postsData && <Posts posts={postsData}/> }

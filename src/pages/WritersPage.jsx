@@ -35,7 +35,9 @@ const StyledWritersPage = styled.div`
             text-align: center;
             margin-bottom: 10px;
             width: 200px;
-
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
     }
@@ -58,6 +60,11 @@ const StyledWritersPage = styled.div`
             cursor: pointer;
 
             box-shadow: 10px 10px 0px 1px ${variables.colors.dark1};
+
+
+            h3 {
+                overflow: visible;
+            }
         }
     }
 

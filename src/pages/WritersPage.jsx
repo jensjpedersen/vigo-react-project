@@ -1,6 +1,7 @@
 
 import { json } from "d3";
 import {useEffect, useState} from "react";
+import { Link } from "react-router-dom";
 
 import styled from 'styled-components';
 import variables from "../globals/variables";
@@ -51,6 +52,8 @@ const StyledWritersPage = styled.div`
     .writer {
         padding: 25px;
         transition: all 0.2s ease-in-out;
+        text-decoration: none;
+        color: white;
 
         &:hover {
 
@@ -111,11 +114,11 @@ export default function WritersPage() {
 
                 {writersData && writersData.map(writer => {
                     return ( 
-                        <div key={'writer' + writer.id} className='writer' >
-                            <h3> { writer.name }</h3>
-                            <img src="../../public/blank-profile-picture-973460_960_720.png"/>
-                            <p> {writer.email}</p>
-                        </div>
+                        <Link to={`/writers/${writer.id}`} key={'writer' + writer.id} className='writer' >
+                                <h3> { writer.name }</h3>
+                                <img src="../../public/blank-profile-picture-973460_960_720.png"/>
+                                <p> {writer.email}</p>
+                        </Link>
                     )
 
                 })}

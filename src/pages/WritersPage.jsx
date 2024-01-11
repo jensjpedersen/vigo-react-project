@@ -59,6 +59,7 @@ const StyledWritersPage = styled.div`
 
             box-shadow: 10px 10px 0px 1px ${variables.colors.dark1};
         }
+    }
 
 
 `

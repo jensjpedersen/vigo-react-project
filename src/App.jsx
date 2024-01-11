@@ -9,6 +9,7 @@ import Header from './components/Header'
 import WritersPage from './pages/WritersPage'
 import NewsPage from './pages/NewsPage'
 import MainPage from './pages/MainPage'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
 
                     <Route path="*" element={<h1>Not Found</h1>} />
                 </Routes>
+
+
+                <Footer />
 
             </BrowserRouter>
         </>

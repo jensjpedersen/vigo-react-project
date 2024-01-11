@@ -1,6 +1,8 @@
 
 import styled from 'styled-components'; 
 
+import variables from '../globals/variables.js';
+
 
 const StyledPosts = styled.div`
     // width: 100px; 
@@ -23,7 +25,7 @@ const StyledPosts = styled.div`
 
     div {
         width: 700px; 
-        border-top: 2px solid black;
+        border-top: 2px solid ${variables.colors.dark1};
         // box-shadow: 5px 5px black;
         padding: 25px;
     }

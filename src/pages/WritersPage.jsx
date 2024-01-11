@@ -7,6 +7,10 @@ import styled from 'styled-components';
 
 
 const StyledWritersPage = styled.div`
+    
+    margin-top: 50px;
+
+
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -12,7 +12,8 @@ const StyledMainPage = styled.div`
     background-image:  url(${bgImage}); 
     background-size: cover; 
 
-    min-height: calc(100vh - ${variables.dimesions.headerHeight});
+    // min-height: calc(100vh - ${variables.dimesions.headerHeight});
+    min-height: 100vh;
 
 
     .text-container {

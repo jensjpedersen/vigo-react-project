@@ -10,6 +10,17 @@ const StyledHeader = styled.header`
     background-color: ${variables.colors.dark1};
     height: ${variables.dimesions.headerHeight};
 
+    // Floting bar styling
+    width: 700px;  
+    position: absolute;
+    top: 5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px; 
+    opacity: 0.8;
+    box-shadow: 0 0 10px 1px ${variables.colors.dark1};
+    
+
     display: flex; 
     justify-content: space-between; 
 

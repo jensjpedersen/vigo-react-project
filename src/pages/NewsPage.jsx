@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 import Posts from '../components/Posts.jsx'; 
+import variables from '../globals/variables.js';
 
 
 
 const StyledNewsPage = styled.div`
-    background-color: #333;
+
+    margin-top: 50px;
+
     display: flex;
     flex-direction: column;
     align-items: center;

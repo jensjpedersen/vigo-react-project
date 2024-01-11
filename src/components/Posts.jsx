@@ -26,8 +26,17 @@ const StyledPosts = styled.div`
     div {
         width: 700px; 
         border-top: 2px solid ${variables.colors.dark1};
-        // box-shadow: 5px 5px black;
         padding: 25px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+            background-color: ${variables.colors.accent2};
+            // cursor: pointer;
+            border-radius: 3px;
+        }
+
+
     }
 
 

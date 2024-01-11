@@ -3,17 +3,17 @@ import { json } from "d3";
 import {useEffect, useState} from "react";
 
 import styled from 'styled-components';
+import variables from "../globals/variables";
 
 
 
 const StyledWritersPage = styled.div`
     
     margin-top: 50px;
-
-
     display: flex;
     flex-direction: column;
     align-items: center;
+
 
 
     .header-container {
@@ -26,7 +26,7 @@ const StyledWritersPage = styled.div`
     .writers-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 25px;
         max-width: 1000px;
         justify-content: center;
 
@@ -34,9 +34,9 @@ const StyledWritersPage = styled.div`
         h3 {
             text-align: center;
             margin-bottom: 10px;
+            width: 200px;
 
         }
-
 
     }
 
@@ -44,6 +44,22 @@ const StyledWritersPage = styled.div`
         width: 200px;
 
     }
+
+
+    .writer {
+        padding: 25px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+
+            background-color: ${variables.colors.accent2};
+            scale: 1.05;
+            border-radius: 3px;
+            cursor: pointer;
+
+            box-shadow: 10px 10px 0px 1px ${variables.colors.dark1};
+        }
+
 
 `
 

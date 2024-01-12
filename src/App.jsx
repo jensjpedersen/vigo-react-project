@@ -14,13 +14,14 @@ import WritersIdPage from './pages/WritersIdPage'
 
 
 
+const baseUrl = '/vigo-react-project/'; 
 
 
 function App() {
 
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename={baseUrl}>
 
                 <Header />
 

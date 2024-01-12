@@ -22,7 +22,7 @@ const StyledMainPage = styled.div`
         background-color: ${variables.colors.accent1};
         opacity: 0.9;
         width: 500px;
-        border-radius: 10px;
+        border-radius: ${variables.dimesions.radius.small}; 
 
         position: absolute;
         top: 70%;

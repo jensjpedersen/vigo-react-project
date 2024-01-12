@@ -5,6 +5,7 @@ import variables from '../globals/variables'
 
 const StyledHeader = styled.header`
     background-color: ${variables.colors.dark1};
+    // background-color: hsl(0, 0%, 14%); 
     height: ${variables.dimesions.headerHeight};
 
     // Floting bar styling
@@ -13,8 +14,9 @@ const StyledHeader = styled.header`
     top: 5px; 
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 50px; 
-    opacity: 0.8;
+    border-radius: ${variables.dimesions.radius.large};
+    border: 3px solid ${variables.colors.light1};
+    opacity: 0.9;
     box-shadow: 0 0 10px 1px ${variables.colors.dark1};
     
 

@@ -19,7 +19,11 @@ export default {
 
   dimesions: {
     headerHeight: '60px',
-    footerHeight: '200px'
+    footerHeight: '200px', 
+    radius: {
+            small: '3px',
+            large: '20px',
+    }
 
   }
 

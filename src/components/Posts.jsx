@@ -33,7 +33,7 @@ const StyledPosts = styled.div`
             transform: scale(1.05);
             background-color: ${variables.colors.accent2};
             // cursor: pointer;
-            border-radius: 3px;
+            border-radius: ${variables.dimesions.radius.small}; 
         }
 
 

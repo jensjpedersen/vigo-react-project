@@ -7,6 +7,8 @@ import variables from "../globals/variables";
 import SingleWriterPage from "./SingleWriterPage";
 import { fetchData } from "../utils/api";
 
+import profilePick from '/blank-profile-picture-973460_960_720.png'
+
 
 
 const StyledWritersPage = styled.div`
@@ -123,7 +125,7 @@ export default function WritersPage() {
                     return ( 
                         <Link to={`/writers/${writer.id}`} key={'writer' + writer.id} className='writer' state={writer.name}>
                                 <h3> { writer.name }</h3>
-                                <img src="../../public/blank-profile-picture-973460_960_720.png"/>
+                                <img src={profilePick}/>
                                 <p> {writer.email}</p>
                         </Link>
                     )

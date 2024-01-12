@@ -1,9 +1,6 @@
-
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import variables from '../globals/variables'
-import { variance } from 'd3';
-
 
 
 const StyledHeader = styled.header`

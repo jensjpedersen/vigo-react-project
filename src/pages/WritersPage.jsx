@@ -75,7 +75,7 @@ const StyledWritersPage = styled.div`
 
             background-color: ${variables.colors.accent2};
             scale: 1.05;
-            border-radius: 3px;
+            border-radius: ${variables.dimesions.radius.small}; 
             cursor: pointer;
 
             box-shadow: 10px 10px 0px 1px ${variables.colors.dark1};

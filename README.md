@@ -1,6 +1,4 @@
-# Vigo React Project
-
-
+# Novari IKS (VIGO IKS) React Project 
 
 ## Run project locally
 ```bash
